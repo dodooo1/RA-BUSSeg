@@ -8,7 +8,7 @@ dataset: # Required.
     rand_resize: [0.5, 2.0]
     crop:
       type: rand
-      size: [513, 513]
+      size: [512, 512]
     batch_size: 2
   val:
     data_root: data/BUS/Breast-UDIAT/
@@ -31,7 +31,7 @@ trainer: # Required.
     kwargs:
       lr: 0.003
       momentum: 0.9
-      weight_decay: 0.0001
+      weight_decay: 0.0005
   lr_scheduler:
     mode: poly
     kwargs:
